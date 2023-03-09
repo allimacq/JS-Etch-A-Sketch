@@ -18,3 +18,25 @@ canvas.addEventListener("mousedown", event => {
     mouseX = event.offsetX;
     mouseY = event.offsetY;
 })
+
+//drawing while mouse is down and moving
+canvas.addEventListener("mousemove", event => {
+    if (userDrawing) {
+        
+        //starts new path for drawing
+        context.beginPath();
+
+        //drawing start
+        context.moveTo(mouseX, mouseY);
+
+        //drawing end
+        context.lineTo(event.offsetX, event.offsetY)
+
+        //draws the line
+        context.stroke();
+
+        //so we get proper lines
+        mouseX = event.offsetX;
+        mouseY = event.offsetY;
+    }
+})
