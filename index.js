@@ -40,3 +40,8 @@ canvas.addEventListener("mousemove", event => {
         mouseY = event.offsetY;
     }
 })
+
+//not drawing when mouseup
+canvas.addEventListener("mouseup", () => {
+    userDrawing = false;
+})
