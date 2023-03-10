@@ -45,3 +45,19 @@ canvas.addEventListener("mousemove", event => {
 canvas.addEventListener("mouseup", () => {
     userDrawing = false;
 })
+
+const button = document.querySelector("#clear");
+
+//clear canvas and enable animation with .shake
+button.addEventListener("click", () => {
+    canvas.classList.add("shake");
+
+    //clearing canvas
+    canvas.width = canvas.width;
+    canvas.height = canvas.height;
+
+    //delay removal for animation
+    setTimeout(() => {
+        canvas.classList.remove("shake")
+    }, 1000);
+})
