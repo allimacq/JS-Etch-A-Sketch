@@ -24,3 +24,13 @@ button {
     margin-inline: 455px;
     margin-top: 5px;
 }
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px) rotate(-10deg); }
+    30% { transform: translateX(10px) rotate(10deg); }
+    50% { transform: translateX(-10px) rotate(-10deg); }
+    60% { transform: translateX(10px) rotate(10deg); }
+    80% { transform: translateX(-10px) rotate(-10deg); }
+    100% { transform: translateX(0); }
+}
