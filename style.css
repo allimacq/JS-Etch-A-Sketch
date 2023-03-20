@@ -26,9 +26,9 @@ button {
     background-color: #002238;
     border-radius: 50px;
     display: block;
-    padding: 5px;
+    padding: 7px;
     margin-inline: 455px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 @keyframes shake {
