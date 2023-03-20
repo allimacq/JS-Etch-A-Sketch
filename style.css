@@ -2,6 +2,12 @@ body {
     background-image: radial-gradient(#011d63, #002238, #001425);
 }
 
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #etch-a-sketch {
     border-block: 65px solid rgb(221, 5, 5);
     border-inline: 55px solid rgb(221, 5, 5);
